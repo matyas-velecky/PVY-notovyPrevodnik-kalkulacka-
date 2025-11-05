@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podlazení kytary</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Podlazovač</h1>
+        </div>
+    </header>
+    <main>
+        <h3>Jaká chceš aby byla nejnižší struna?</h3>
+        <form>
+            <input list="tones" id="lowestNote">
+            <datalist id="tones">
+                <option value="C">
+                <option value="C#">
+                <option value="D">
+                <option value="D#">
+                <option value="E">
+                <option value="F">
+                <option value="F#">
+                <option value="G">
+                <option value="G#">
+                <option value="A">
+                <option value="A#">
+                <option value="H">
+            </datalist>
+        </form>
+        <p id="error"></p>
+        <h3>Jak chceš hrát?</h3>
+        <form>
+            <input type="radio" id="drop" name="tunning" value="drop">
+            <label for="drop">v dropu</label>
+            <input type="radio" id="standart" name="tunning" value="standart">
+            <label for="standart">v standartu</label>
+        </form>
+        <button id="end">vyhodnotit</button>
+        <p id="result"></p>
+    <div>
+    </div>
+    </main>
+    <footer></footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
